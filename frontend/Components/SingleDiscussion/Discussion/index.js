@@ -42,7 +42,6 @@ class Discussion extends Component {
 
     return (
       <div className={styles.container}>
-
         <div className={styles.infoContainer}>
           <img className={styles.avatar} src={userAvatar} />
           <div className={styles.columnOnSmallBP}>
@@ -56,8 +55,7 @@ class Discussion extends Component {
             <div className={styles.dateInfo}>{dateDisplay}</div>
           </div>
         </div>
-
-        <div className={styles.discTitle}>{discTitle}</div>
+<div className={styles.discTitle}>{discTitle}</div>
         <div className={styles.discContent}>
           <RichEditor
             readOnly={true}

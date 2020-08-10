@@ -17,6 +17,7 @@ import SingleDiscussion from '../Views/SingleDiscussion';
 import NewDiscussion from '../Views/NewDiscussion';
 import UserProfile from '../Views/UserProfile';
 import NotFound from '../Views/NotFound';
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.render (
   <Provider store={appStore}>

@@ -1,16 +1,16 @@
 {
-  "name": "reforum",
+  "name": "mit",
   "version": "1.0.0",
   "description": "A forum application built with ReactJS, Redux, Express and MongoDB",
-  "author": "Provash Shoumma",
+  "author": "Soohee Kim, Hayoung Lee, Hyoyoung Seo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shoumma/ReForum/issues"
+    "url": "https://github.com/su0766/Reforum/issues"
   },
-  "homepage": "https://github.com/shoumma/ReForum#readme",
+  "homepage": "https://github.com/su0766/ReForum#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shoumma/ReForum.git"
+    "url": "git+https://github.com/su0766/ReForum.git"
   },
   "keywords": [
     "forum",
@@ -48,6 +48,7 @@
   "dependencies": {
     "better-npm-run": "^0.0.13",
     "body-parser": "^1.15.2",
+    "bootstrap": "^4.5.2",
     "compression": "^1.6.2",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^1.3.2",

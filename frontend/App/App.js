@@ -52,11 +52,7 @@ class AppContainer extends Component {
     if (forums) {
       return (
         <div>
-          <Helmet><title>ReForum</title></Helmet>
-
-          <div className={styles.gitForkTag}>
-            <a className={styles.gitLink} href="https://github.com/shoumma/ReForum" target="_blank">Fork on Github</a>
-          </div>
+          <Helmet><title>MIT</title></Helmet>
 
           <Header />
           {this.props.children}
