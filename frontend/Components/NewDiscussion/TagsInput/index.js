@@ -23,7 +23,7 @@ class TagsInput extends Component {
   }
 
   validateTag(tagName) {
-    const regex = /^[a-z0-9.\-_$@*!]{4,20}$/;
+    const regex = /^[a-z0-9.\-_$@*!]{2,20}$/;
     return regex.test(tagName);
   }
 
@@ -56,7 +56,7 @@ class TagsInput extends Component {
         this.setState({ errorMsg: 'Same tag!!!' });
       }
     } else {
-      this.setState({ errorMsg: 'Tags can only contain small letters and numbers. No space or special characters please. Min 4 and max 20 chars.' });
+      this.setState({ errorMsg: 'Tags can only contain small letters and numbers. No space or special characters please. Min 2 and max 20 chars.' });
     }
   }
 
