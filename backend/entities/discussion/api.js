@@ -1,4 +1,5 @@
 // discussion controllers
+const request = require('request'); 
 const getDiscussion = require('./controller').getDiscussion;
 const createDiscussion = require('./controller').createDiscussion;
 const toggleFavorite = require('./controller').toggleFavorite;
@@ -40,7 +41,40 @@ const discussionAPI = (app) => {
   app.post('/api/discussion/newDiscussion', (req, res) => {
     if (req.user) {
       createDiscussion(req.body).then(
-        (result) => { res.send(Object.assign({}, result._doc, { postCreated: true })); },
+        (result) => { 
+        
+          var json_content = JSON.parse(req.body.content);
+          console.log(json_content);
+
+          var userId = req.body.userId.charAt(0);
+          var title = req.body.title;
+          var json_content = JSON.parse(req.body.content);
+          var json_text = JSON.parse(json_content.blocks[0].text);
+          var status = json_text.status;
+          var score = json_text.score;
+
+          //var json_text = JSON.parse(json_content.text);
+          console.log(json_text.status);
+          var tag = req.body.tags[0];
+
+          var userstring = userId+'/'+title+'/'+status+'/'+score+'/'+tag
+          var url = "http://101.101.217.23:3000/"+userstring;
+          
+          console.log(url);
+ 
+        request(url, function(err,response,body){
+            if (!err && response.statusCode == 200)
+              console.log('success');
+            else 
+                console.log(err);
+        });
+
+
+          
+
+          res.send(Object.assign({}, result._doc, { postCreated: true })); 
+          console.log("createDiscussion");
+        },
         (error) => { res.send({ postCreated: false }); }
       );
     } else {

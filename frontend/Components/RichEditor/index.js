@@ -112,7 +112,7 @@ class RichEditor extends Component {
 
     let placeholder = '';
     if (type === 'newOpinion') placeholder = 'Your opinion...';
-    if (type === 'newDiscussion') placeholder = 'Discussion summary...';
+    if (type === 'newDiscussion') placeholder = 'Input ex. {"status" : 1, "score" : 5}';
 
     return (
       <div className={classnames(styles.container, readOnly && styles.readOnlyContainer)}>
