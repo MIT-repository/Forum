@@ -26,7 +26,7 @@ const opinionAPI = (app) => {
           var userstring = branch_name+'/'+branch_creator+'/'+branch_rid+'/'+branch_pid+'/'+branch_message;
           console.log(userstring);
 
-          var url = "http://repository:3000/"+userstring;
+          var url = "http://101.101.217.23:3000/"+userstring;
           
           console.log(url);
  

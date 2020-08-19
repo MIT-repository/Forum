@@ -47,7 +47,7 @@ class Opinion extends Component {
           {/* <Button noUppercase>Quote</Button> */}
       </div>
         <div>
-        <a href="http://repository:3000/register" target="_blank">Upload</a>
+        <a href="http://101.101.217.23:3000/register" target="_blank">Upload</a>
         </div>
 
         <div className={styles.opContent}>

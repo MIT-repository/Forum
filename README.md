@@ -8,8 +8,7 @@
 * [MongoDB](https://www.mongodb.com/)
 * [Docker](https://hub.docker.com/)
 
-Open Source Originated by
-* [Reforum](https://github.com/proshoumma/ReForum)
+* Open Source Originated by [Reforum](https://github.com/proshoumma/ReForum)
 -----
 
 ### Home View
@@ -24,13 +23,22 @@ Open Source Originated by
 * Users have their own profile page
 * Admin can create new forum categories
 * Admin have a lot of power over every users discussions and opinions :-p
+-----
 
 ## Usage
 ### Webpage
 ```
-[webpage](http://http://101.101.211.186:8080/)
+* [webpage](http://http://101.101.211.186:8080/)
 ```
-### 직접 실행
+### Docker
+```
+docker build -t .
+```
+```
+docker run -d p 8080:8080 --name tag tag
+```
+
+### Run manually
 To run the app in development environment:
 ```
 $ npm run start:dev
@@ -42,4 +50,4 @@ $ npm run start
 ```
 
 ## License
-[MIT License](https://github.com/shoumma/Mister-Poster/blob/master/LICENSE).
+[MIT License](https://github.com/shoumma/Mister-Poster/blob/master/LICENSE)

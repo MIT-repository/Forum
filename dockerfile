@@ -8,5 +8,5 @@ RUN npm install
 # RUN npm ci —only=production 
 # 앱 소스 추가 
 COPY . . 
-EXPOSE 8080 
-CMD [ "npm", "run","start:dev" ]
+EXPOSE 8080
+CMD [ "npm", "run", "start:dev" ]
