@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from 'Containers/Header';
 import Footer from 'Components/Footer';
 import appLayout from 'SharedStyles/appLayout.css';

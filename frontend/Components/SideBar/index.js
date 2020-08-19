@@ -14,7 +14,7 @@ class SideBar extends Component {
       <div className={styles.sidebarContainer}>
         <Link to={`/${currentForum}/new_discussion`}>
           <Button type='outline' fullWidth noUppercase>
-            New Discussion
+            New Repository
           </Button>
         </Link>
       </div>

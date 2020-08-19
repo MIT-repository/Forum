@@ -68,7 +68,7 @@ class ForumFeed extends Component {
       <div className={classnames(appLayout.showOnMediumBP, styles.newDiscussionBtn)}>
         <Link to={`/${currentForum}/new_discussion`}>
           <Button type='outline' fullWidth noUppercase>
-            New Discussion
+            New Repository
           </Button>
         </Link>
       </div>

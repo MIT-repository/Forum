@@ -17,7 +17,7 @@ const app = express();
 require('./backend/express')(app, serverConfigs);
 
 // fire up the server
-app.listen(8080, (error) => {
+app.listen(3030, (error) => {
   if (error) throw error;
   console.log('Server running on port: ' + serverConfigs.PORT);
 });

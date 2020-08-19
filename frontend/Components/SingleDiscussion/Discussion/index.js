@@ -67,10 +67,10 @@ class Discussion extends Component {
           <div className={styles.tags}>
             { tags.map(tag => <Tag name={tag} key={_.uniqueId('tag_')} />)}
           </div>
-          <Button noUppercase className={styles.favoriteButton} onClick={() => { !toggleingFavorite && favoriteAction(id); }}>
+          {/* <Button noUppercase className={styles.favoriteButton} onClick={() => { !toggleingFavorite && favoriteAction(id); }}>
             <i className={classnames(`fa fa-${userFavorited ? 'heart' : 'heart-o'}`)}></i>
             <span>{favCount}</span>
-          </Button>
+          </Button> */}
 
           { allowDelete && <Button noUppercase className={styles.deleteButton} onClick={() => { deleteAction(); }}>
             <i className={classnames('fa fa-trash', styles.trashIcon)}></i>

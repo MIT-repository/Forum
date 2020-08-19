@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './styles.css';
 
 import RichEditor from 'Components/RichEditor';
+import Button from 'Components/Button';
 
 class ReplyBox extends Component {
   render() {
@@ -11,7 +12,7 @@ class ReplyBox extends Component {
       onChange,
     } = this.props;
 
-    if (posting) return <div className={styles.loadingWrapper}>Posting your opinion...</div>;
+    if (posting) return <div className={styles.loadingWrapper}>Creating new branch...</div>;
 
     return (
       <RichEditor

@@ -107,11 +107,11 @@ class RichEditor extends Component {
     };
 
     let saveButtonLabel = '';
-    if (type === 'newOpinion') saveButtonLabel = 'Reply';
-    if (type === 'newDiscussion') saveButtonLabel = 'Post Discussion';
+    if (type === 'newOpinion') saveButtonLabel = 'Push';
+    if (type === 'newDiscussion') saveButtonLabel = 'Post Repository';
 
     let placeholder = '';
-    if (type === 'newOpinion') placeholder = 'Your opinion...';
+    if (type === 'newOpinion') placeholder = 'Tell me something about a new Branch...';
     if (type === 'newDiscussion') placeholder = 'Input ex. {"status" : 1, "score" : 5}';
 
     return (

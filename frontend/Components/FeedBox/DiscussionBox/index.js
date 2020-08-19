@@ -41,7 +41,7 @@ class DiscussionBox extends Component {
 
           <div className={styles.postInfo}>
             <span className={styles.info}>{timeDisplay}</span>
-            <span className={styles.info}>{voteCount} favorites</span>
+            {/* <span className={styles.info}>{voteCount} favorites</span> */}
             <span className={styles.info}>{opinionCount} opinions</span>
           </div>
         </div>

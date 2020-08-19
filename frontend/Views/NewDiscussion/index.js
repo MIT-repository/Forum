@@ -99,7 +99,7 @@ class NewDiscussion extends Component {
           key={'title'}
           type="text"
           className={styles.titleInput}
-          placeholder={'Discussion title...'}
+          placeholder={'Repository title...'}
           value={title}
           onChange={(event) => { updateDiscussionTitle(event.target.value); }}
         />,
@@ -125,7 +125,7 @@ class NewDiscussion extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.signInMsg)}>
-        Please sign in before posting a new discussion.
+        Please sign in before posting a new repository.
       </div>
     );
   }
@@ -144,15 +144,15 @@ class NewDiscussion extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.content)}>
-        <Helmet><title>MIT | New Discussion</title></Helmet>
+        <Helmet><title>MIT | New Repository</title></Helmet>
 
         <div className={styles.forumInfo}>
-          You are creating a new discussion on <span className={styles.forumName}>{currentForum}</span> forum.
+          You are creating a new repository on <span className={styles.forumName}>{currentForum}</span> .
         </div>
         <div className={styles.errorMsg}>{errorMsg}</div>
-        { postingSuccess && <div className={styles.successMsg}>Your discussion is created :-)</div> }
+        { postingSuccess && <div className={styles.successMsg}>Your repository is created :-)</div> }
         { this.renderEditor() }
-        { postingDiscussion && <div className={styles.postingMsg}>Posting discussion...</div> }
+        { postingDiscussion && <div className={styles.postingMsg}>Posting repository...</div> }
       </div>
     );
   }

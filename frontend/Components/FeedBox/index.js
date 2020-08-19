@@ -21,12 +21,12 @@ class FeedBox extends Component {
           >
             Latest
           </span>
-          <span
+          {/* <span
             className={classnames(styles.sort, (activeSortingMethod === 'popularity') && styles.sortActive)}
             onClick={() => onChangeSortingMethod('popularity')}
           >
             Popular
-          </span>
+          </span> */}
         </div>
       );
     }
@@ -36,7 +36,7 @@ class FeedBox extends Component {
   renderEmptyDiscussionLine(loading, discussions) {
     if (!loading) {
       if (!discussions || discussions.length === 0) {
-        return <div className={styles.loading}>No discussions...</div>;
+        return <div className={styles.loading}>No repositories...</div>;
       }
     }
   }
@@ -51,7 +51,7 @@ class FeedBox extends Component {
     } = this.props;
 
     let discussionBoxTitle = '';
-    if (type === 'general') discussionBoxTitle = 'Discussions';
+    if (type === 'general') discussionBoxTitle = 'Repositories';
     if (type === 'pinned') discussionBoxTitle = 'Pinned';
 
     return (

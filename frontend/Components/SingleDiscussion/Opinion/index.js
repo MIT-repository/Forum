@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import moment from 'moment';
 import classnames from 'classnames';
 import styles from './styles.css';
-
 import PlaceholderImage from 'SharedStyles/placeholder.jpg';
 import Button from 'Components/Button';
 import RichEditor from 'Components/RichEditor';
@@ -46,6 +45,9 @@ class Opinion extends Component {
             <span>Delete</span>
           </Button> }
           {/* <Button noUppercase>Quote</Button> */}
+      </div>
+        <div>
+        <a href="http://repository:3000/register" target="_blank">Upload</a>
         </div>
 
         <div className={styles.opContent}>
@@ -54,7 +56,6 @@ class Opinion extends Component {
             value={opContent}
           />
         </div>
-
         { (deletingOpinion === opinionId) && <div className={styles.deletingOpinion}>Deleting Opinion ...</div> }
       </div>
     );
@@ -87,6 +88,7 @@ Opinion.propTypes = {
   currentUserRole: React.PropTypes.string,
   deleteAction: React.PropTypes.func,
   deletingOpinion: React.PropTypes.any,
+  onAddClick: React.PropTypes.func.isRequired,
 };
 
 export default Opinion;

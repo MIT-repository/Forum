@@ -45,7 +45,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  type: React.PropTypes.oneOf(['default', 'outline']),
+  type: React.PropTypes.oneOf(['default', 'outline', 'newOpinion']),
   fullWidth: React.PropTypes.bool,
   noUppercase: React.PropTypes.bool,
   alwaysActive: React.PropTypes.bool,

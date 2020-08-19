@@ -58,7 +58,7 @@ const discussionAPI = (app) => {
           var tag = req.body.tags[0];
 
           var userstring = userId+'/'+title+'/'+status+'/'+score+'/'+tag
-          var url = "http://101.101.217.23:3000/"+userstring;
+          var url = "http://repository:3000/"+userstring;
           
           console.log(url);
  
